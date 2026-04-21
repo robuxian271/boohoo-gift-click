@@ -129,7 +129,7 @@ function Header() {
       <img
         src={boohoomanLogo}
         alt="boohooMAN"
-        className="h-20 w-auto md:h-24"
+        className="h-14 w-auto md:h-16"
       />
     </div>
   );
