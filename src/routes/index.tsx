@@ -125,11 +125,11 @@ function Card({ children }: { children: React.ReactNode }) {
 
 function Header() {
   return (
-    <div className="flex items-center justify-center bg-foreground px-6 py-8">
+    <div className="flex items-center justify-center overflow-hidden bg-foreground px-6 py-8">
       <img
         src={boohoomanLogo}
         alt="boohooMAN"
-        className="h-10 w-auto md:h-12"
+        className="h-20 w-auto md:h-24"
       />
     </div>
   );
