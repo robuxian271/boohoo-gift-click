@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import boohoomanLogo from "@/assets/boohooman-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -124,10 +125,12 @@ function Card({ children }: { children: React.ReactNode }) {
 
 function Header() {
   return (
-    <div className="bg-foreground px-6 py-8 text-center">
-      <span className="text-3xl font-black uppercase tracking-tighter text-background">
-        boohoo<span className="font-light">MAN</span>
-      </span>
+    <div className="flex items-center justify-center bg-foreground px-6 py-8">
+      <img
+        src={boohoomanLogo}
+        alt="boohooMAN"
+        className="h-10 w-auto md:h-12"
+      />
     </div>
   );
 }
