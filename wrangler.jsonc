@@ -3,8 +3,5 @@
   "name": "boohoo-gift-click",
   "main": "dist/server/server.js",
   "compatibility_date": "2026-04-21",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": {
-    "directory": "dist/client"
-  }
+  "compatibility_flags": ["nodejs_compat"]
 }
