@@ -1,5 +1,4 @@
 import { Outlet, Link, createRootRoute } from "@tanstack/react-router";
-import { useEffect } from "react";
 
 function NotFoundComponent() {
   return (
@@ -43,10 +42,5 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
-  const meta = Route.useMatch().meta;
-  useEffect(() => {
-    const title = meta?.find((m: any) => m && "title" in m)?.title;
-    if (title) document.title = title as string;
-  }, [meta]);
   return <Outlet />;
 }
